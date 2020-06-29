@@ -1,0 +1,306 @@
+html, body{
+    margin: 0;
+    padding: 0;
+   
+}
+
+.lt-grid-container{
+    
+    width: 100%;
+    margin: 0px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+
+.container2{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5px;
+}
+
+.home{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.cabe{
+    background-color: rgb(21, 131, 76);
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 2;
+ }
+
+.caixa1{
+  
+    display: flex;
+    justify-content: center;
+}
+
+.position {
+    display: flex;
+    color: #FFF;
+    font-size: 40px;
+    justify-content: center;
+}
+
+.caixa2 a{
+    font-size: 18px;
+    color: #FFF;
+    text-decoration: none;
+    padding: 5px;
+
+
+}
+
+.caixa2 a:hover{
+    font-weight: bolder;
+    background-color:#0f5c3f;
+    opacity: 70%;
+    border: 1px solid #FFF;
+    border-radius: 25px;
+    text-decoration: transparent;
+    color: #FFF; 
+     
+}
+
+.caixa3 a:hover{
+    font-weight: bolder;
+    background-color:#0f5c3f;
+    opacity: 70%;
+    border: 1px solid #FFF;
+    border-radius: 25px;
+    text-decoration: transparent;
+    color: #FFF;  
+}
+
+.caixa3 a{
+    font-size: 18px;
+    color: #FFF;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.caixa4 a:hover{
+    font-weight: bolder;
+    background-color:#0f5c3f;
+    opacity: 70%;
+    border: 1px solid #FFF;
+    border-radius: 25px;
+    text-decoration: transparent;
+    color: #FFF;  
+}
+
+.caixa4 a{
+    font-size: 18px;
+    color: #FFF;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.caixa5 a:hover{
+    font-weight: bolder;
+    background-color:#0f5c3f;
+    opacity: 70%;
+    border: 1px solid #FFF;
+    border-radius: 25px;
+    text-decoration: transparent;
+    color: #FFF;   
+}
+
+.caixa5 a{
+    font-size: 18px;
+    color: #FFF;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.apresentacao{
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+
+.sobre{
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+}
+
+.texto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 60px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.dentro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 60px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.aula{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aula img{
+    height: 400px;
+    margin-bottom: 30px;
+}
+
+.ser{
+    margin-top: 20px;
+}
+
+.ser a:hover{
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.fonte{
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.fonte2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto  img{
+    height:500px;
+    width: 100%;
+}
+
+/* rodapé */
+
+.rodape{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(128, 126, 112);
+    color: #FFF;
+}
+
+.redessociais{
+    display: flex;
+}
+
+.redessociais img{
+    padding: 5px;
+}
+
+.pagamentos{
+    display: flex;
+}
+
+.detalhe{
+    margin-bottom: 60px;
+}
+
+.pagamentos img{
+    padding: 5px;
+}
+
+.final{
+    text-align: center;
+    background-color: black;
+    color: #FFF;
+}
+
+.aula2{
+    display: none;
+}
+
+/* parte respansiva */
+
+@media (max-width:530px){
+
+    html,body{
+         height: 100%;
+         display: grid;
+         margin: 0px;
+         padding: 0px;
+        
+    }
+
+ .cabeçalho{
+     display: block;
+ }
+
+
+     .position{
+        font-size: 20px;
+    }
+
+    .foto  img{
+        height:300px;
+        width: 100%;
+    }
+
+    .aula{
+        display: none;
+    }
+
+    .aula2{
+        display: unset;
+    }
+
+    .texto{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    
+    .dentro{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .ser{
+        display: block;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    
+    .formaspagamento{
+        display: none;
+    }
+
+    .rodape{
+        display: flex;
+        justify-content: space-around;
+    }
+}

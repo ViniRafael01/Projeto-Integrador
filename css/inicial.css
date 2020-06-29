@@ -1,0 +1,237 @@
+html, body{
+    margin: 0;
+    padding: 0;
+   
+}
+
+.lt-grid-container{
+    
+    width: 100%;
+    margin: 0px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.container2{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5px;
+}
+
+.carta{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.carta img{
+    height: 150px;
+    width: auto;
+}
+
+
+.cabe{
+    background-color: rgb(21, 131, 76);
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.confira{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.caixa1{
+    display: flex;
+    justify-content: center;
+}
+
+.position {
+    display: flex;
+    color: #FFF;
+    font-size: 40px;
+    justify-content: center;
+}
+
+.caixa2 a{
+    font-size: 18px;
+    color: #FFF;
+    text-decoration: none;
+    padding: 5px;
+
+
+}
+
+.caixa2 a:hover{
+    font-weight: bolder;
+    background-color:#0f5c3f;
+    opacity: 70%;
+    border: 1px solid #FFF;
+    border-radius: 25px;
+    text-decoration: transparent;
+    color: #FFF; 
+     
+}
+
+.caixa3 a:hover{
+    font-weight: bolder;
+    background-color:#0f5c3f;
+    opacity: 70%;
+    border: 1px solid #FFF;
+    border-radius: 25px;
+    text-decoration: transparent;
+    color: #FFF;  
+}
+
+.caixa3 a{
+    font-size: 18px;
+    color: #FFF;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.caixa4 a:hover{
+    font-weight: bolder;
+    background-color:#0f5c3f;
+    opacity: 70%;
+    border: 1px solid #FFF;
+    border-radius: 25px;
+    text-decoration: transparent;
+    color: #FFF;  
+}
+
+.caixa4 a{
+    font-size: 18px;
+    color: #FFF;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.caixa5 a:hover{
+    font-weight: bolder;
+    background-color:#0f5c3f;
+    opacity: 70%;
+    border: 1px solid #FFF;
+    border-radius: 25px;
+    text-decoration: transparent;
+    color: #FFF;   
+}
+
+.caixa5 a{
+    font-size: 18px;
+    color: #FFF;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.cards{
+    grid-column-start: 1;
+}
+
+.card1{
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.card2{
+    grid-row-start: 1;
+    grid-column-start: 5;
+    
+}
+
+.card4{
+    grid-row-start:1 ;
+    grid-column-start: 6;
+}
+
+.rodape{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(128, 126, 112);
+    color: #FFF;
+}
+
+.redessociais{
+    display: flex;
+}
+
+.redessociais img{
+    padding: 5px;
+}
+
+.pagamentos{
+    display: flex;
+}
+
+.detalhe{
+    margin-bottom: 60px;
+}
+
+.pagamentos img{
+    padding: 5px;
+}
+
+.final{
+    text-align: center;
+    background-color: black;
+    color: #FFF;
+}
+
+/* parte respansiva */
+
+@media (max-width:530px){
+
+ html,body{
+        height: 100%;
+        display: grid;
+        margin: 0px;
+        padding: 0px;
+   }
+
+.cabeçalho{
+    display: block;
+}
+
+.position{
+    font-size: 20px;
+}
+
+.container2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.carousel {
+display: none ;
+}
+
+.confira{
+    font-size: 20px;
+}
+
+.carta{
+    display: block ;
+    align-items: center;
+    justify-content: center;
+}
+
+.formaspagamento{
+    display: none;
+}
+
+.rodape{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+}
